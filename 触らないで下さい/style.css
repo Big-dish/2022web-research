@@ -1,0 +1,220 @@
+/*desk top size
+ ========================*/
+ @media (min-width: 600px) {
+	.flex-reverse {
+		flex-direction: row-reverse;
+	}
+	.content {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 1rem 1rem;
+	}
+	
+ }
+
+/*グラフの文字*/
+.ct-label {
+	font-size: 1rem;
+	fill: #fff;
+}
+
+/*円グラフ*/
+.ct-series-a .ct-slice-pie {
+	fill: #2d3374;
+}
+
+.ct-series-b .ct-slice-pie {
+	fill: #3a7edf;
+}
+
+.ct-series-c .ct-slice-pie {
+	fill: #9bcdf8;
+}
+
+/*棒グラフQ3*/
+.ct-chart {
+	font-size: 1rem;
+	fill: #fff;
+}
+
+/*棒グラフ*/
+.ct-series-a .ct-bar{
+	stroke: #2d3374;
+}
+
+.ct-series-b .ct-bar {
+	stroke: #3a7edf;
+}
+/*Q4のカラーを変えたいが出来なかった
+.ct-series-b .ct-bar2 {
+	stroke: #E6FFE9;*
+}
+*/
+
+/*seiwa fire dept*/
+.top-content {
+	position: sticky; 
+	top: 0;
+    margin: 10px 10px;
+	padding: 10px;
+    color: #000080;
+	background-color: #fff;
+    font-family: "M PLUS Rounded 1c";
+	text-decoration: none;
+   	border-bottom: 1px solid gainsboro;
+   	/*padding-bottom: 1px;*/
+}
+.count{
+	text-align: right;
+	color: #000080;
+}
+
+/*footer*/
+footer {
+	background: rgb(34, 32, 32);
+	text-align: center;
+	padding: 26px 0;
+}
+footer p {
+	color: gray;
+	font-size: 0.875rem;
+}
+
+/*画像文字スライド*/
+.sample3 {
+	height:			450px;
+    background-size:100% auto;
+    /*background-size: cover;*/
+	overflow:		hidden;
+	margin:			10px 8px 10px 16px;
+	position:		relative;
+    background-image: url(images/cars2022.jpg);
+}
+.sample3 .caption {
+	font-size:		300%;
+	color:			#fff;
+	padding-top:		80px;
+	padding-left:		0px;
+}
+.sample3 .mask {
+	width:			100%;
+	height:			100%;
+	position:		absolute;
+	top:			0;
+	left:			0;
+	opacity:		0;	/* マスクを表示しない */
+	background-color:	rgba(0,0,0,0.4);
+	-webkit-transition:	all 0.6s ease;
+	transition:		all 0.6s ease;
+}
+.sample3:hover .mask {
+	opacity:		1;	/* マスクを表示する */
+	padding-left:		90px;	/* 右にずらす */
+}
+
+/*字体A当たり前のことを*/
+.caption { 
+    font-family: "Nico Moji"; 
+}
+
+/*上下移動のやつ*/
+  /*ボタンのスタイル*/
+  .page-top{
+    /*ボタンタグのリセットcss*/
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    appearance: none;
+
+
+/*ボタンの装飾*/
+position: fixed;
+right: 30px;
+bottom: 30px;
+z-index: 100;
+width: 50px;
+height: 50px;
+border-radius: 50%;
+background-color: #115582;
+display: flex;
+align-items: center;
+justify-content: center;
+transition: all 0.3s sase;
+}
+
+/*矢印のスタイル*/
+.page-top::before{
+    content: "";
+    width: 12px;
+    height: 12px;
+    margin-bottom: -6px;
+    border-top: solid 3px #fff;
+    border-right: solid 3px #fff;
+    transform: rotate(-45deg);
+}
+
+/*ホバー時のスタイル*/
+.page-top:hover{
+    transform: scale(1.1);
+} 
+
+/*question*/
+.question {
+	border-bottom: 2px solid;
+	border-color: blue;
+	margin: 10px 10px;
+	padding: 10px;}
+
+/*span Q3*/
+.marker_navy{
+    background: linear-gradient(transparent 80%, #000080 30%);
+    }
+section:nth-child(even){
+    background: whitesmoke;
+}
+.marker_blue{
+    background: linear-gradient(transparent 80%, #0000FF 30%);
+    }
+section:nth-child(even){
+    background: whitesmoke;
+}
+.marker_yello{
+    background: linear-gradient(transparent 80%, #FFFF00 30%);
+    }
+section:nth-child(even){
+    background: whitesmoke;
+}
+
+/*Q34以降の範囲サイズ*/
+.ct-chart {
+	width: 100%;
+	height: 300px;
+}
+.ct-chart2 {
+	width: 100%;
+	height: 300px;
+}
+.ct-chart3 {
+	width: 100%;
+	height: 300px;
+}
+
+/*q11,12のbutton*/
+.btn {
+	color: #fff;
+	font-size: 1.5rem;
+	border-radius: 5px;
+	text-decoration: none;
+	background: #5fb2c1;
+	box-shadow: 0 3px #3b8a98;
+	position: relative;
+	display: inline-block;
+	top: -2px;
+	padding: 10px 20px;
+}
+.btn:hover {
+	box-shadow: 0 1px #3b8a98;
+	top: 1px;
+}
